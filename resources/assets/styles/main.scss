@@ -1,30 +1,9 @@
 @import "variables";
 
 @import "~bootstrap/scss/bootstrap";
-@import "~slick-carousel/slick/slick.scss";
+// @import "~slick-carousel/slick/slick.scss";
 
-@import "reset";
-@import "header";
-@import "navbar";
-@import "main-slideshow";
-@import "sub-slideshow";
-@import "form-search";
-@import "block-heading";
-@import "block-flex-tab";
-@import "block-topic";
-@import "aspect-ratio";
-@import "block-list";
-@import "grid";
-@import "footer";
-@import "servay";
-@import "scroll-to-top";
-@import "block-i-want-to";
-@import "tab-collapse";
-@import "service-detail";
-@import "breadcrumb";
-@import "hero-banner";
-@import "form-filter";
-@import "pagination";
-@import "feedback";
-@import "star";
-@import "search";
+@import "fonts";
+@import "layout";
+@import "components";
+@import "utilities";

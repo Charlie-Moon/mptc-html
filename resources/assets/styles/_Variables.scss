@@ -1,41 +1,15 @@
-$font-body: "Open Sans", "Metal", sans-serif;
+$font-body: "Open Sans", "Kantumruy", sans-serif;
 $font-family-sans-serif: $font-body;
-$blue: #254187;
-$gray-default: #F5F6FA;
-$color-red: #f00;
-$enable-responsive-font-sizes: true;
+
+$enable-responsive-font-sizes: false;
 $spacer: 15px;
 $grid-gutter-width: 20px;
 $container-max-widths: (
     sm: 540px,
     md: 720px,
     lg: 960px,
-    xl: 1088px
+    xl: 1300px
 ) !default;
-
-$aspectratios: (
-    "4-1": 25,
-    "21-9": 42.86,
-    "16-9": 56.25,
-    "4-3": 75,
-    "1-1": 100,
-    "2-3": 150,
-    "3-4": 133.33,
-    "8-1": 12.50
-) !default;
-
-
-$sizes:(
-    25: 25%,
-    40: 40%,
-    50: 50%,
-    60: 60%,
-    75: 75%,
-    100: 100%,
-    auto: auto,
-    33: 33.33%,
-    20: 20%
-);
 
 $spacer: 15px !default;
 $spacers: () !default;
@@ -52,3 +26,20 @@ $spacers: map-merge(
   ),
   $spacers
 );
+
+$h1: 22px;
+$h2: 20px;
+$h3: 18px;
+$h4: 16px;
+$h5: 14px;
+$h6: 12px;
+
+// colors
+$body-bg: #F4F4F4;
+$primary: #003A8A;
+$secondary: #444444;
+$info: #13A2E1;
+$warning: #F27C00;
+$danger: #DF2A54;
+$light: #8B8B8B;
+$dark: #12293A;

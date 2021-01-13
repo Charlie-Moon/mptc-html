@@ -1,0 +1,38 @@
+.block-service {
+    @extend .text-center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    .col-md-3 {
+        margin-bottom: 30px;
+    }
+    h5 {
+        margin-bottom: 0;
+    }
+    img {
+        display: block;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a {
+        color: $dark;
+        position: relative;
+        &::before {
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            height: 0;
+            width: 100%;
+            background-color: $warning;
+            border-radius: 10px;
+            content: "";
+            display: block;
+        }
+        &:hover {
+            text-decoration: none;
+            &:before {
+                height: 5px;
+            }
+        }
+    }
+}

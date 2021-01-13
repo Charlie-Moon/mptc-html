@@ -1,0 +1,11 @@
+// List of headings
+$headings: ( h1: $h1, h2: $h2, h3: $h3, h4: $h4, h5: $h5, h6: $h6 );
+// Loop over list of headings
+// @each ( $heading : $size )
+@each $heading, $size in $headings {
+    #{$heading} {
+        margin: 10px 0;
+        line-height: 1.5em;
+        font-size: $size;
+    }
+}
