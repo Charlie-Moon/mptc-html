@@ -1,0 +1,53 @@
+.card {
+    .card-title {
+        margin-bottom: 24px;
+        @extend .font-weight-bold;
+    }
+    &.style-1 {
+        @extend .border-0, .bg-tran;
+        a {
+            @extend .text-dark;
+        }
+        .card-body {
+            @extend .px-0
+        }
+    }
+    &.style-2 {
+        a {
+            @extend .text-white;
+        }
+        .card-body {
+            @extend .card-img-overlay, .d-flex, .align-items-end;
+            &:before {
+                content: "";
+                display: block;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: -webkit-linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,0) 60%,rgba(0,0,0,0));
+                background: linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,0) 60%,rgba(0,0,0,0));
+            }
+            .card-title {
+                z-index: 2;
+                max-height: 92px;
+                overflow: hidden;
+            }
+        }
+    }
+    &.style-3 {
+        @extend .border-0;
+        .card-title {
+            @extend .mb-0, .font-weight-normal;
+            font-size: 14px;
+        }
+        .card-footer {
+            @extend .border-top-0, .bg-none, .rounded-0, .pt-0;
+            font-size: 13px;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 15px;
+    }
+}

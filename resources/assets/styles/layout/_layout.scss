@@ -1,0 +1,11 @@
+html, body {
+    height: 100%;
+}
+.nav-open, .search-open {
+    overflow:  hidden;
+}
+.nav-open .mobile-nav {
+    z-index: 2;
+    display: block;
+    transition: 300ms ease;
+}

@@ -1,0 +1,11 @@
+.blog-table {
+    table {
+        @extend .table-responsive-sm, .table-bordered;
+        td {
+            a {
+                @extend .text-dark, .text-truncate, .d-block;
+                max-width: 700px;
+            }
+        }
+    }
+}

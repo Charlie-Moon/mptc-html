@@ -1,0 +1,20 @@
+.block-news {
+    @include block-heading;
+    .card-center {
+        @extend .d-flex, .flex-column, .justify-content-between;
+        .card.style-2 {
+            .card-title {
+                @extend .small, .mb-0;
+            }
+        }
+    }
+    .card {
+        @extend .border-0;
+    }
+    .slide-news {
+        @include slide-components
+    }
+    .readmore {
+        @extend .readmore;
+    }
+}

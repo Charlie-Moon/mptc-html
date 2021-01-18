@@ -1,0 +1,25 @@
+nav[aria-label="navigation"] {
+    ul {
+        @extend .pagination, .align-items-center, .mt-4;
+        li {
+            @extend .page-item, .mx-2;
+            a {
+                @extend .page-link, .font-weight-bold, .border-0, .rounded-circle, .d-flex, .justify-content-center, .align-items-center, .text-primary, .bg-none;
+                
+                &.current {
+                    @extend .bg-warning, .rounded-circle, .text-white, .d-flex, .justify-content-center, .align-items-center, .p-0;
+                }
+            }
+            &:not(:last-child),:not(:first-child) {
+                a {
+                    font-size: 18px;
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+            &:last-child a:hover, &:first-child a:hover {
+                @extend .bg-none;
+            }
+        }
+    }
+}

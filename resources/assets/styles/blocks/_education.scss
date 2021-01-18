@@ -1,0 +1,17 @@
+.block-education {
+    @include block-heading;
+    .style-2 {
+        .card-body {
+            @extend .justify-content-center, .align-items-center;
+            .card-title {
+                height: 50px;
+                width: 50px;
+                background-color: rgba($color: #fff, $alpha: 0.6);
+                @extend .d-flex, .align-items-center, .justify-content-center, .rounded-circle, .mb-0;
+            }
+        }
+    }
+    .readmore {
+        @extend .readmore;
+    }
+}

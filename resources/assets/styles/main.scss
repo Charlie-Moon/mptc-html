@@ -1,9 +1,28 @@
 @import "variables";
 
+// css framework
 @import "~bootstrap/scss/bootstrap";
-// @import "~slick-carousel/slick/slick.scss";
 
-@import "fonts";
-@import "layout";
+// slideshow style
+@import "~slick-carousel/slick/slick.scss";
+
+// video pop up style
+@import "~modal-video/scss/modal-video.scss";
+
+@import "mixin";
+
 @import "components";
-@import "utilities";
+
+
+
+
+@import "elements";
+
+// style main page
+@import "layout";
+
+// blocks style
+@import "blocks";
+
+// pages styles
+@import "pages";

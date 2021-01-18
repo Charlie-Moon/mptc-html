@@ -1,0 +1,14 @@
+.other-unit {
+    background-image: url("../images/bg-shape.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 200px;
+    margin-bottom: -77px; 
+    @include block-heading;
+    .row {
+        img {
+            height: 100px;
+        }
+    }
+}

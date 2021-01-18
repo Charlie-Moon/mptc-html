@@ -1,0 +1,33 @@
+.blog {
+    color: $dark;
+    &.sidebar-right {
+        .row {
+            @extend .flex-row-reverse;
+        }
+    }
+    .sidebar {
+        li {
+            @extend .list-group-item, .font-weight-bold, .d-flex, .justify-content-between, .align-items-center, .border-top-0, .border-bottom-0, .border-right-0, .rounded-0;
+            border-left: 4px solid $danger;
+            a {
+                @extend .text-dark;
+            }
+            .badge {
+                @extend .badge-pill, .text-white, .px-3;
+                background: #DDDDDD;
+            }
+            &:not(.current-menu-item) {
+                @extend .bg-none;
+                border-left-color: transparent;
+            }
+        }
+    }
+    article {
+        margin-bottom: $space-section-b;
+        .blog-title {
+            a {
+                @extend .text-primary, .font-weight-bold;
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@mixin block-heading {
+    @extend .section-space;
+    .block-heading {
+        margin-bottom: $space-section-b;
+        * {
+            @extend .block-title;
+        }
+    }
+}
+@mixin slide-components {
+    .slick-arrow {
+        opacity: 1;
+        @extend .carousel-control-prev, .border-0, .bg-none, .p-0;
+        &::before {
+            content: "";
+            background-color: $warning;
+            height: 30px;
+            width: 30px;
+            line-height: 0;
+            @extend .d-flex, .justify-content-center, .align-items-center, .rounded-circle;
+        }
+
+        &.slick-prev {
+            left: 0;
+            &::before {
+                content: url(../images/chev-left.svg);
+                transform: rotate(180deg);
+            }
+        }
+        &.slick-next {
+            right: 0;
+            left: unset;
+            &::before {
+                content: url(../images/chev-right.svg);
+            }
+        }
+    }
+    .slick-dots {
+        list-style-type: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        @extend .d-flex, .justify-content-center, .mb-2, .pl-0;
+        .slick-active {
+            button {
+                opacity: 1;
+            }
+        }
+        button {
+            @extend .btn, .bg-white, .rounded-0, .p-0;
+            text-indent: -999px;
+            flex: 0 1 auto;
+            width: 30px;
+            height: 3px;
+            margin-right: 3px;
+            margin-left: 3px;
+            opacity: .5;
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+}
