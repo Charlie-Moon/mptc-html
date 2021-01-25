@@ -1,0 +1,15 @@
+.block-leader {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .cover-img {
+        margin-bottom: 30px;
+        width: 80%;
+        @extend .embed-responsive, .embed-responsive-1by1, .mx-auto;
+        img {
+            width: 100%;
+            object-fit: cover;
+            @extend .embed-responsive-item, .rounded-circle;
+        }
+
+    }
+}

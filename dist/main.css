@@ -4894,10 +4894,10 @@ button.bg-dark:focus {
 .border-left {
   border-left: 1px solid #dee2e6 !important; }
 
-.border-0, .card.style-1, .card.style-3, nav[aria-label="navigation"] ul li a, .header form .form-search .form-control, .block-news .card, .block-news .slide-news .slick-arrow, .blog-detail .slide-related .slick-arrow, .blog-detail .related-article .list-group-item, .blog-detail .related-article .blog .sidebar li, .blog .sidebar .blog-detail .related-article li {
+.border-0, .card.style-1, .card.style-3, .card.style-4, nav[aria-label="navigation"] ul li a, .header form .form-search .form-control, .block-news .card, .block-news .slide-news .slick-arrow, .blog-detail .slide-related .slick-arrow, .blog-detail .related-article .list-group-item, .blog-detail .related-article .blog .sidebar li, .blog .sidebar .blog-detail .related-article li {
   border: 0 !important; }
 
-.border-top-0, .card.style-3 .card-footer, .blog .sidebar li {
+.border-top-0, .card.style-3 .card-footer, .card.style-4 .card-footer, .blog .sidebar li {
   border-top: 0 !important; }
 
 .border-right-0, .blog .sidebar li {
@@ -4909,7 +4909,7 @@ button.bg-dark:focus {
 .border-left-0 {
   border-left: 0 !important; }
 
-.border-primary, .blog-detail .related-article .related-title {
+.border-primary, .card.style-4 .aspect16-9, .blog-detail .related-article .related-title {
   border-color: #003A8A !important; }
 
 .border-secondary {
@@ -4961,13 +4961,13 @@ button.bg-dark:focus {
 .rounded-lg {
   border-radius: 0.3rem !important; }
 
-.rounded-circle, nav[aria-label="navigation"] ul li a, nav[aria-label="navigation"] ul li a.current, .block-news .slide-news .slick-arrow::before, .block-education .style-2 .card-body .card-title, .blog-detail .slide-related .slick-arrow::before {
+.rounded-circle, nav[aria-label="navigation"] ul li a, nav[aria-label="navigation"] ul li a.current, .block-news .slide-news .slick-arrow::before, .block-education .style-2 .card-body .card-title, .blog-detail .slide-related .slick-arrow::before, .blog-detail .minister img, .minister-cover img {
   border-radius: 50% !important; }
 
 .rounded-pill {
   border-radius: 50rem !important; }
 
-.rounded-0, .card.style-3 .card-footer, .header form .form-search .form-control, .blog .sidebar li, .block-news .slide-news .slick-dots button, .blog-detail .slide-related .slick-dots button {
+.rounded-0, .card.style-3 .card-footer, .card.style-4 .card-footer, .header form .form-search .form-control, .blog .sidebar li, .block-news .slide-news .slick-dots button, .blog-detail .slide-related .slick-dots button {
   border-radius: 0 !important; }
 
 .clearfix::after {
@@ -5102,20 +5102,28 @@ button.bg-dark:focus {
   .d-print-inline-flex {
     display: inline-flex !important; } }
 
-.embed-responsive {
+.embed-responsive, .blog-detail .minister, .minister-cover {
   position: relative;
   display: block;
   width: 100%;
   padding: 0;
   overflow: hidden; }
-  .embed-responsive::before {
+  .embed-responsive::before, .blog-detail .minister::before, .minister-cover::before {
     display: block;
     content: ""; }
-  .embed-responsive .embed-responsive-item,
+  .embed-responsive .embed-responsive-item, .blog-detail .minister .embed-responsive-item, .minister-cover .embed-responsive-item, .blog-detail .minister img, .embed-responsive .minister-cover img, .minister-cover .embed-responsive img, .minister-cover img,
   .embed-responsive iframe,
+  .blog-detail .minister iframe,
+  .minister-cover iframe,
   .embed-responsive embed,
+  .blog-detail .minister embed,
+  .minister-cover embed,
   .embed-responsive object,
-  .embed-responsive video {
+  .blog-detail .minister object,
+  .minister-cover object,
+  .embed-responsive video,
+  .blog-detail .minister video,
+  .minister-cover video {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -5133,7 +5141,7 @@ button.bg-dark:focus {
 .embed-responsive-4by3::before {
   padding-top: 75%; }
 
-.embed-responsive-1by1::before {
+.embed-responsive-1by1::before, .blog-detail .minister::before, .minister-cover::before {
   padding-top: 100%; }
 
 .flex-row {
@@ -5664,7 +5672,7 @@ button.bg-dark:focus {
 .h-75 {
   height: 75% !important; }
 
-.h-100 {
+.h-100, .card {
   height: 100% !important; }
 
 .h-auto {
@@ -5699,7 +5707,7 @@ button.bg-dark:focus {
 .mx-0 {
   margin-right: 0 !important; }
 
-.mb-0, .card.style-3 .card-title, .block-news .card-center .card.style-2 .card-title, .block-education .style-2 .card-body .card-title,
+.mb-0, .card.style-3 .card-title, .card.style-4 .card-title, .block-news .card-center .card.style-2 .card-title, .block-education .style-2 .card-body .card-title,
 .my-0 {
   margin-bottom: 0 !important; }
 
@@ -5809,7 +5817,7 @@ nav[aria-label="navigation"] ul li {
 .p-0, nav[aria-label="navigation"] ul li a.current, .block-news .slide-news .slick-arrow, .block-news .slide-news .slick-dots button, .blog-detail .slide-related .slick-arrow, .blog-detail .slide-related .slick-dots button {
   padding: 0 !important; }
 
-.pt-0, .card.style-3 .card-footer,
+.pt-0, .card.style-3 .card-footer, .card.style-4 .card-footer,
 .py-0,
 .blog-detail .slide-related .list-group-item,
 .blog-detail .slide-related .blog .sidebar li,
@@ -7164,10 +7172,10 @@ nav[aria-label="navigation"] ul li {
 .font-weight-lighter {
   font-weight: lighter !important; }
 
-.font-weight-normal, .card.style-3 .card-title {
+.font-weight-normal, .card.style-3 .card-title, .card.style-4 .card-title {
   font-weight: 400 !important; }
 
-.font-weight-bold, .card .card-title, nav[aria-label="navigation"] ul li a, .blog .sidebar li, .blog article .blog-title a, .blog-detail .related-article .related-title {
+.font-weight-bold, .card .card-title, .card.style-4 .card-title, nav[aria-label="navigation"] ul li a, .blog .sidebar li, .blog article .blog-title a, .blog-detail .related-article .related-title {
   font-weight: 700 !important; }
 
 .font-weight-bolder {
@@ -7528,7 +7536,7 @@ a.text-dark:hover, .blog-table table td a:hover, .card.style-1 a:hover, .blog .s
   src: local("Kantumruy Bold"), local("Kantumruy-Bold"), url(fonts/ae1fb765ff23d28d817efe3d2c1db866.ttf) format("truetype");
   unicode-range: U+1780-17FF,U+200B-200C,U+25CC; }
 
-.bg-none, .breadcrumb, .card.style-3 .card-footer, nav[aria-label="navigation"] ul li a, nav[aria-label="navigation"] ul li:last-child a:hover, nav[aria-label="navigation"] ul li:first-child a:hover, .blog .sidebar li:not(.current-menu-item), .block-news .slide-news .slick-arrow, .blog-detail .slide-related .slick-arrow, .blog-detail .related-article .list-group-item, .blog-detail .related-article .blog .sidebar li, .blog .sidebar .blog-detail .related-article li {
+.bg-none, .breadcrumb, .card.style-3 .card-footer, .card.style-4 .card-footer, nav[aria-label="navigation"] ul li a, nav[aria-label="navigation"] ul li:last-child a:hover, nav[aria-label="navigation"] ul li:first-child a:hover, .blog .sidebar li:not(.current-menu-item), .block-news .slide-news .slick-arrow, .blog-detail .slide-related .slick-arrow, .blog-detail .related-article .list-group-item, .blog-detail .related-article .blog .sidebar li, .blog .sidebar .blog-detail .related-article li {
   background: none; }
 
 .bg-tran, .card.style-1 {
@@ -7579,11 +7587,19 @@ a.text-dark:hover, .blog-table table td a:hover, .card.style-1 a:hover, .blog .s
   max-height: 92px;
   overflow: hidden; }
 
-.card.style-3 .card-title {
+.card.style-3 .card-title, .card.style-4 .card-title {
   font-size: 14px; }
 
-.card.style-3 .card-footer {
+.card.style-3 .card-footer, .card.style-4 .card-footer {
   font-size: 13px; }
+
+.card.style-4 .aspect16-9 {
+  border-bottom: 8px solid; }
+
+.card.style-4 .card-title {
+  font-size: 1rem; }
+  .card.style-4 .card-title a {
+    color: #12293A; }
 
 @media (max-width: 767.98px) {
   .card {
@@ -7598,7 +7614,6 @@ a.text-dark:hover, .blog-table table td a:hover, .card.style-1 a:hover, .blog .s
   left: 0;
   right: 0;
   bottom: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(90deg, rgba(61, 163, 207, 0.8) 0%, rgba(0, 58, 138, 0.8) 100%);
@@ -8010,4 +8025,10 @@ footer .footer-nabar a {
 .blog-detail .related-article .related-title {
   background-color: #EEEEEE;
   border-bottom: 2px solid; }
+
+.blog-detail .minister img {
+  object-fit: cover; }
+
+.minister-cover img {
+  object-fit: cover; }
 

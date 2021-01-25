@@ -1,4 +1,7 @@
 .blog-detail {
+    .blog-title {
+        @extend .font-weight-bold;
+    }
     .meta-tag {
         @extend .d-flex, .align-items-center, .justify-content-between, .my-4;
         .published {

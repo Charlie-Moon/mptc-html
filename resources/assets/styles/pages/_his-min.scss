@@ -1,0 +1,75 @@
+.block-history {
+    .history-card {
+        margin-bottom: 30px;
+        .date {
+            width: 160px;
+            float: left;
+            font-size: 40px;
+            @extend .text-center;
+        }
+        .post-thumb {
+            img {
+                float: left;
+                width:250px;
+                height:auto;
+                margin: 0 30px 0 30px;
+                border-left: 5px solid blue;
+                padding-left: 30px;
+            }
+        }
+
+    }
+}
+
+
+.his-min {
+    .his-min-des {
+        .date {
+            width: 160px;
+            float: left;
+            font-size: 40px;
+            
+        }
+        .post-thumb {
+            img {
+                float: left;
+                width:200px;
+                height:auto;
+                border:1px solid red;
+                margin: 0 30px 0 30px;
+            }
+        }
+
+        .post-text {
+            .post-title {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.block-history-ministry {
+    margin-bottom: 30px;
+
+    .item-history-ministry {
+        margin-bottom: 30px;
+        .post-thumb {
+            img {
+                float: left;
+                width:250px;
+                height:auto;
+                padding-right: 30px;
+            }
+        }
+
+        .post-text {
+            .post-title {
+                margin-bottom: 30px;
+            }
+
+            .date {
+                color: #acacac;
+            }
+        }
+    }
+}

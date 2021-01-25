@@ -2,3 +2,8 @@
     margin-top: $space-t-small;
     @extend .d-block;
 }
+.input-group-text {
+    background-color: $primary;
+    border-color: $primary;
+    color: #fff;
+}

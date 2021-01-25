@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 // toggle button search
 $(document).ready(function(){
-  $("#search").click(function(){
+  $(".btn-search").click(function(){
     $("body").toggleClass("search-open");
   });
 });

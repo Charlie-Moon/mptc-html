@@ -1,0 +1,44 @@
+.block-ministry-leader {
+    .des-ministry-leader {
+        @extend .mb-5;
+    }
+    .minister {
+        @extend .mb-5;
+        .min-title {
+            @extend .text-center, .mb-5;
+        }
+        .cover-img {
+            width: 200px;
+            height: 200px;
+            @extend .embed-responsive, .embed-responsive-1by1, .mx-auto, .mb-3;
+            img {
+                width: 100%;
+                object-fit: cover;
+                @extend .embed-responsive-item, .rounded-circle;
+            }
+        }
+        .title-leader {
+            @extend .text-center;
+            h4 {
+                font-size: 18px;
+                a {
+                    @extend .text-primary;
+                }
+            }
+        }
+    }
+}
+
+// @media only screen and (max-width: 767px) {
+//     .cover-img {
+//         // margin-bottom: 30px;
+//         width: 130px;
+//         height: 130px;
+//         @extend .embed-responsive, .embed-responsive-1by1, .mx-auto, .mb-3;
+//         img {
+//             width: 100%;
+//             object-fit: cover;
+//             @extend .embed-responsive-item, .rounded-circle;
+//         }
+//     }
+// }

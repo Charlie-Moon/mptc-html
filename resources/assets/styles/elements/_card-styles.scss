@@ -1,4 +1,5 @@
 .card {
+    @extend .h-100;
     .card-title {
         margin-bottom: 24px;
         @extend .font-weight-bold;
@@ -13,6 +14,7 @@
         }
     }
     &.style-2 {
+        @extend .h-auto;
         a {
             @extend .text-white;
         }
@@ -46,6 +48,20 @@
             @extend .border-top-0, .bg-none, .rounded-0, .pt-0;
             font-size: 13px;
         }
+    }
+    &.style-4 {
+        .aspect16-9 {
+            @extend .border-primary;
+            border-bottom: 8px solid;
+        }
+        .card-title {
+           font-size: 1rem;
+           @extend .font-weight-bold;
+           a {
+               color: $dark;
+           }
+        }
+        @extend .style-3;
     }
     @include media-breakpoint-down(sm) {
         margin-bottom: 15px;

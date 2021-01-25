@@ -10,18 +10,18 @@
     <title>Ministry of Post and Telecommunications</title>
 </head>
 
-<body class="wordpress-class" id="body">
+<body class="wordpress-class nav-close" id="body">
     <header class="header">
         <div id="particles-js"></div>
-        <div class="container">
-            <div class="d-lg-flex justify-content-between">
-                <picture>
-                    <!-- <source media="(min-width: 992px)" srcset="./assets/images/logo.png"> -->
-                    <source media="(min-width: 992px)" srcset="./assets/images/logo.svg">
-                    <img src="./assets/images/logo.svg">
-                </picture>
-                <ul class="my-auto text-center list-inline d-none d-lg-block
-                        language">
+        <div class="container d-none d-md-block ">
+            <div class="d-flex justify-content-between">
+                <a href="./index.html">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="./assets/images/logo.svg">
+                        <img src="./assets/images/logo.svg">
+                    </picture>
+                </a>
+                <ul class="my-auto text-center language">
                     <li class="list-inline-item">
                         <a href="#">
                             <span>EN</span>
@@ -34,13 +34,103 @@
                     </li>
                 </ul>
             </div>
-            <div class="d-flex d-lg-none justify-content-between mt-3">
+
+            <!-- Navbar -->
+            <div class="d-flex justify-content-between align-items-center">
+                <nav class="navbar">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a class="dropdown-toggle" href="#" id="about" role="button" data-toggle="dropdown"
+                                aria-expanded="false" aria-current="page">អំពីក្រសួង</a>
+                            <ul class="dropdown-menu" aria-labelledby="about">
+                                <li class="menu-item"><a href="./ministry-leaders.html">ថ្នាក់ដឹកនាំក្រសួង</a></li>
+                                <li class="menu-item"><a href="#">រចនាសម្ព័ន្ធក្រសួង</a></li>
+                                <li class="menu-item"><a href="./achievements.html">សមិទ្ធិផល</a></li>
+                                <li class="menu-item"><a href="./vision-information.html">ចក្ខុវិស័យ និងបេសកកម្ម</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a class="dropdown-toggle" href="./blog-sidebar-left.html" id="services"
+                                role="button" data-toggle="dropdown" aria-expanded="false"
+                                aria-current="page">សេវាសាធារណៈ</a>
+                            <ul class="dropdown-menu" aria-labelledby="services">
+                                <li class="menu-item"><a
+                                        href="./ministry-leaders.html">បច្ចេកវិទ្យាគមនាគមន៍និងព័ត៌មាន</a></li>
+                                <li class="menu-item"><a href="./service-telecom.html">ទូរគមនាគមន៍</a></li>
+                                <li class="menu-item"><a href="./achievements.html">ឌីជីថល</a></li>
+                                <li class="menu-item"><a href="./vision-information.html">ដែន .KH</a>
+                                <li class="menu-item"><a href="./vision-information.html">ប្រៃសណីយ៍</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a class="dropdown-toggle" href="./blog-table.html" id="documents"
+                                role="button" data-toggle="dropdown" aria-expanded="false" aria-current="page">ឯកសារ</a>
+                            <ul class="dropdown-menu" aria-labelledby="documents">
+                                <li class="menu-item"><a href="./file-law.html">ច្បាប់</a></li>
+                                <li class="menu-item"><a href="./file-royal-decree.html">ព្រះរាជក្រឹត្យ</a></li>
+                                <li class="menu-item"><a href="./file-sub-decree.html">អនុក្រឹត្យ</a></li>
+                                <li class="menu-item"><a href="./file-lace-press.html">សារាចរ និងសេចក្តីប្រកាស</a>
+                                <li class="menu-item"><a href="./file-basic-data.html">ទិន្ន័យមូលដ្ឋាន</a></li>
+                                <li class="menu-item"><a href="./file-posts.html">ប្រកាស</a></li>
+                                <li class="menu-item"><a href="./file-achievements.html">សមិទ្ធិផល</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a class="dropdown-toggle" href="./blog-digital.html" id="digital"
+                                role="button" data-toggle="dropdown" aria-expanded="false"
+                                aria-current="page">បណ្តុំឌីជីថល</a>
+                            <ul class="dropdown-menu" aria-labelledby="digital">
+                                <li class="menu-item"><a href="./digital-ego.html">រដ្ឋាភិបាលឌីជីថល</a>
+                                </li>
+                                <li class="menu-item"><a
+                                        href="./digital-new-digital-business.html">ធុរៈកិច្ចថ្មីឌីជីថល</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a class="dropdown-toggle" href="./news.html" id="news" role="button"
+                                data-toggle="dropdown" aria-expanded="false" aria-current="page">ព័ត៌មាន</a>
+                            <ul class="dropdown-menu" aria-labelledby="news">
+                                <li class="menu-item"><a href="./news-announcement.html">សេចក្តីជូនដំណឹង</a></li>
+                                <li class="menu-item"><a href="./news-each-news.html">ព័ត៏មាននីមួយៗ</a></li>
+                                <li class="menu-item"><a href="./news-press-release.html">សេចក្តីប្រកាសព័ត៍មាន</a></li>
+                                <li class="menu-item"><a href="./news-digital-education.html">អប់រំឌីជីថល</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="./contact.html">ទំនាក់ទំនង</a></li>
+                    </ul>
+                </nav>
+                <form class="dropdown">
+                    <button type="button" class="btn pr-0" id="dropdownMenuOffset" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" data-offset="10,24">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.649" height="20.649">
+                            <path data-name="Path 1286"
+                                d="M8.6 0a8.6 8.6 0 105.439 15.259L19.18 20.4a.863.863 0 101.22-1.22l-5.137-5.137A8.595 8.595 0 008.6 0zm0 1.721A6.883 6.883 0 111.721 8.6 6.87 6.87 0 018.6 1.721z"
+                                fill="#fff" />
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuOffset">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder=ពាក្យគន្លឹះ>
+                            <div class="input-group-prepend">
+                                <button class="input-group-text">ស្វែងរក</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="mobile-header d-md-none">
+            <div class="d-flex justify-content-between">
                 <button class="mr-3 my-auto navbar-toggler
-                        text-white nav-icon d-md-none">
+                    text-white nav-icon d-md-none">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
+                <a href="./index.html">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="./assets/images/logo.svg">
+                        <img src="./assets/images/logo.svg">
+                    </picture>
+                </a>
                 <button class="btn btn-search pr-0" id="search">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20.649" height="20.649">
                         <path data-name="Path 1286"
@@ -48,87 +138,103 @@
                             fill="#fff" />
                     </svg>
                 </button>
-
             </div>
-
-            <!-- Navbar -->
-            <nav class="navbar d-none d-lg-flex">
+            <!-- mobile menu -->
+            <div class="mobile-nav">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <ul class="my-auto list-inline language">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span>EN</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item current-menu-item">
+                            <a href="#">
+                                <span>ខ្មែរ</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="mr-3 my-auto close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
                 <ul class="menu">
-                    <li class="menu-item current-menu-item">
+                    <li class="menu-item">
                         <a class="dropdown-toggle" href="#" id="about" role="button" data-toggle="dropdown"
                             aria-expanded="false" aria-current="page">អំពីក្រសួង</a>
                         <ul class="dropdown-menu" aria-labelledby="about">
-                            <li class="menu-item"><a href="#">អំពីរដ្ឋមន្ត្រី</a></li>
-                            <li class="menu-item"><a href="#">ព័ត៌មានសង្ខេបស្តីពីក្រសួង</a></li>
+                            <li class="menu-item"><a href="./ministry-leaders.html">ថ្នាក់ដឹកនាំក្រសួង</a></li>
                             <li class="menu-item"><a href="#">រចនាសម្ព័ន្ធក្រសួង</a></li>
+                            <li class="menu-item"><a href="./achievements.html">សមិទ្ធិផល</a></li>
+                            <li class="menu-item"><a href="./vision-information.html">ចក្ខុវិស័យ និងបេសកកម្ម</a>
+                            </li>
                         </ul>
                     </li>
-                    <li class="menu-item"><a href="cityzen.html">សេវាសាធារណៈ</a></li>
-                    <li class="menu-item"><a href="business.html">ឯកសារ</a></li>
-                    <li class="menu-item"><a href="foreigner.html">បណ្តុំឌីជីថល</a></li>
-                    <li class="menu-item"><a href="visitor.html">ព័ត៌មាន</a></li>
-                    <li class="menu-item"><a href="our-kingdom.html">ទំនាក់ទំនង</a></li>
+                    <li class="menu-item"><a class="dropdown-toggle" href="./blog-sidebar-left.html" id="services"
+                            role="button" data-toggle="dropdown" aria-expanded="false"
+                            aria-current="page">សេវាសាធារណៈ</a>
+                        <ul class="dropdown-menu" aria-labelledby="services">
+                            <li class="menu-item"><a href="./ministry-leaders.html">បច្ចេកវិទ្យាគមនាគមន៍និងព័ត៌មាន</a>
+                            </li>
+                            <li class="menu-item"><a href="./service-telecom.html">ទូរគមនាគមន៍</a></li>
+                            <li class="menu-item"><a href="./achievements.html">ឌីជីថល</a></li>
+                            <li class="menu-item"><a href="./vision-information.html">ដែន .KH</a>
+                            <li class="menu-item"><a href="./vision-information.html">ប្រៃសណីយ៍</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a class="dropdown-toggle" href="./blog-table.html" id="documents"
+                            role="button" data-toggle="dropdown" aria-expanded="false" aria-current="page">ឯកសារ</a>
+                        <ul class="dropdown-menu" aria-labelledby="documents">
+                            <li class="menu-item"><a href="./file-law.html">ច្បាប់</a></li>
+                            <li class="menu-item"><a href="./file-royal-decree.html">ព្រះរាជក្រឹត្យ</a></li>
+                            <li class="menu-item"><a href="./file-sub-decree.html">អនុក្រឹត្យ</a></li>
+                            <li class="menu-item"><a href="./file-lace-press.html">សារាចរ និងសេចក្តីប្រកាស</a>
+                            <li class="menu-item"><a href="./file-basic-data.html">ទិន្ន័យមូលដ្ឋាន</a></li>
+                            <li class="menu-item"><a href="./file-posts.html">ប្រកាស</a></li>
+                            <li class="menu-item"><a href="./file-achievements.html">សមិទ្ធិផល</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a class="dropdown-toggle" href="./blog-digital.html" id="digital"
+                            role="button" data-toggle="dropdown" aria-expanded="false"
+                            aria-current="page">បណ្តុំឌីជីថល</a>
+                        <ul class="dropdown-menu" aria-labelledby="digital">
+                            <li class="menu-item"><a href="./digital-ego.html">រដ្ឋាភិបាលឌីជីថល</a>
+                            </li>
+                            <li class="menu-item"><a href="./digital-new-digital-business.html">ធុរៈកិច្ចថ្មីឌីជីថល</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a class="dropdown-toggle" href="./news.html" id="news" role="button"
+                            data-toggle="dropdown" aria-expanded="false" aria-current="page">ព័ត៌មាន</a>
+                        <ul class="dropdown-menu" aria-labelledby="news">
+                            <li class="menu-item"><a href="./news-announcement.html">សេចក្តីជូនដំណឹង</a></li>
+                            <li class="menu-item"><a href="./news-each-news.html">ព័ត៏មាននីមួយៗ</a></li>
+                            <li class="menu-item"><a href="./news-press-release.html">សេចក្តីប្រកាសព័ត៍មាន</a></li>
+                            <li class="menu-item"><a href="./news-digital-education.html">អប់រំឌីជីថល</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="./contact.html">ទំនាក់ទំនង</a></li>
                 </ul>
-                <form action="">
-                    <button class="btn pr-0" data-toggle="dropdown" aria-expanded="false" aria-controls="my-collapse">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20.649" height="20.649">
-                            <path data-name="Path 1286"
-                                d="M8.6 0a8.6 8.6 0 105.439 15.259L19.18 20.4a.863.863 0 101.22-1.22l-5.137-5.137A8.595 8.595 0 008.6 0zm0 1.721A6.883 6.883 0 111.721 8.6 6.87 6.87 0 018.6 1.721z"
-                                fill="#fff" />
-                        </svg>
-                    </button>
-                    <div id="search" class="dropdown-menu form-search" aria-labelledby="search">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder=ពាក្យគន្លឹះ>
-                            <div class="input-group-prepend">
-                                <button class="input-group-text">ស្វែងរក</button>
-                            </div>
-                        </div>
+            </div>
 
+            <!-- mobile search -->
+            <div id="search" class="form-search">
+                <button type="button" class="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder=ពាក្យគន្លឹះ>
+                        <div class="input-group-prepend">
+                            <button class="input-group-text">ស្វែងរក</button>
+                        </div>
                     </div>
                 </form>
-            </nav>
+            </div>
         </div>
     </header>
 
-    <!-- mobile menu -->
-    <div class="mobile-nav nav-close d-lg-none">
-        <button class="mr-3 my-auto close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-        <ul class="menu">
-            <li class="menu-item current-menu-item">
-                <a class="dropdown-toggle" href="#" id="about" role="button" data-toggle="dropdown"
-                    aria-expanded="false" aria-current="page">អំពីក្រសួង</a>
-                <ul class="dropdown-menu" aria-labelledby="about">
-                    <li class="menu-item current-menu-item"><a href="#">អំពីរដ្ឋមន្ត្រី</a></li>
-                    <li class="menu-item"><a href="#">ព័ត៌មានសង្ខេបស្តីពីក្រសួង</a></li>
-                    <li class="menu-item"><a href="#">រចនាសម្ព័ន្ធក្រសួង</a></li>
-                </ul>
-            </li>
-            <li class="menu-item"><a href="cityzen.html">សេវាសាធារណៈ</a></li>
-            <li class="menu-item"><a href="business.html">ឯកសារ</a></li>
-            <li class="menu-item"><a href="foreigner.html">បណ្តុំឌីជីថល</a></li>
-            <li class="menu-item"><a href="visitor.html">ព័ត៌មាន</a></li>
-            <li class="menu-item"><a href="our-kingdom.html">ទំនាក់ទំនង</a></li>
-        </ul>
-        <div class="bg-overlay"></div>
-    </div>
-
-    <!-- mobile search -->
-    <div id="search" class="form-search">
-        <button type="button" class="close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-        <form action="">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder=ពាក្យគន្លឹះ>
-                <div class="input-group-prepend">
-                    <button class="input-group-text">ស្វែងរក</button>
-                </div>
-            </div>
-        </form>
-    </div>
 
     <!-- content -->
     <main>
@@ -141,8 +247,7 @@
                         <img src="./assets/images/imac.png" alt="ict
                                     icon">
                         <h5 class="service-title">
-
-                            <a href="">
+                            <a href="./service-ict.html">
                                 បច្ចេកវិទ្យាគមនាគមន៍និងព័ត៌មាន
                             </a>
                         </h5>
@@ -150,7 +255,7 @@
                     <div class="col-6 col-md-3 mb-4 mb-md-0">
                         <img src="./assets/images/phone.png" alt="telecom icon">
                         <h5 class="service-title">
-                            <a href="">
+                            <a href="./service-telecom.html">
                                 ទូរគមនាគមន៍
                             </a>
                         </h5>
@@ -158,7 +263,7 @@
                     <div class="col-6 col-md-3 mb-4 mb-md-0">
                         <img src="./assets/images/iphone play.png" alt="phone pay">
                         <h5 class="service-title">
-                            <a href="">
+                            <a href="./service-digital.html">
                                 ឌីជីថល
                             </a>
                         </h5>
@@ -167,7 +272,7 @@
                         <img src="./assets/images/car.png" alt="post
                                 icon">
                         <h5 class="service-title">
-                            <a href="">
+                            <a href="./service-post.html">
                                 ប្រៃសណីយ៍
                             </a>
                         </h5>
@@ -187,7 +292,7 @@
                             </figure>
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <a href="">គម្រោង5G</a>
+                                    <a href="./detail.html">គម្រោង5G</a>
                                 </h5>
                                 <div class="description">
                                     ស្វែងយល់បន្ថែមអំពីថាមពលអេឡិចត្រូម៉ាញ៉េទិច(EME)និង5Gរបៀបដែលយើងគ្រប់គ្រងវាដោយផ្អែកលើដំបូន្មានវិទ្យាសាស្ត្រចុងក្រោយ។
@@ -203,7 +308,7 @@
                             </figure>
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <a href="">កម្មវិធីទូរស័ព្ទដៃខ្មៅ</a>
+                                    <a href="./detail.html">កម្មវិធីទូរស័ព្ទដៃខ្មៅ</a>
                                 </h5>
                                 <div class="description">
                                     រដ្ឋាភិបាលកំពុងធ្វើឱ្យប្រសើរឡើងនូវវិសាលភាពគ្របដណ្តប់និងការប្រកួតប្រជែងតាមទូរស័ព្ទចល័តនៅទូទាំងតំបន់និងពីចម្ងាយនៃប្រទេសកម្ពុជា។
@@ -218,7 +323,7 @@
                             </figure>
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <a href="">សុវត្ថិភាពលើអ៊ីនធឺណិត</a>
+                                    <a href="./detail.html">សុវត្ថិភាពលើអ៊ីនធឺណិត</a>
                                 </h5>
                                 <div class="card-text ">
                                     យើងចង់អោយប្រទេសកម្ពុជាទាំងអស់ចូលរួមតាមអ៊ិនធរណេតដោយសុវត្ថិភាពនិងប្រកបដោយទំនុកចិត្ត។
@@ -250,7 +355,7 @@
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        <a href="">
+                                        <a href="./detail.html">
                                             ឯកឧត្តមរដ្ឋមន្ត្រី ជា វ៉ាន់ដេត
                                             បានទទួលជំនួបពិភាក្សាជាមួយគណៈប្រតិភូរបស់ក្រុមហ៊ុន SEATEL
                                         </a>
@@ -265,7 +370,7 @@
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        <a href="">
+                                        <a href="./detail.html">
                                             ឯកឧត្តម ជា វ៉ាន់ដេត បានដឹកនាំមន្ត្រី និងអ្នកជំនាញបច្ចេកទេសក្រសួង
                                             ទៅទស្សនកិច្ចនៅការដ្ឋានសាងសង់ ពហុកីឡដ្ឋានជាតិមរតកតេជោ
                                             ដើម្បីសិក្សារៀបចំតភ្ជាប់បណ្តាញទូរគមនាគមន៍
@@ -280,7 +385,7 @@
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        <a href="">
+                                        <a href="./detail.html">
                                             ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ ប្រជុំជាមួយក្រុមហ៊ុនបច្ចេកវិទ្យាអន្តរជាតិចំនួន
                                             ១៥ ដើម្បីពិភាក្សា និងស្វែងយល់ឱ្យកាន់តែស៊ីជម្រៅថែមទៀតអំពីវិស័យ ICT
                                             និងការអភិវឌ្ឍបច្ចេកវិទ្យាឌីជីថល
@@ -298,7 +403,7 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <a href="">
+                                    <a href="./detail.html">
                                         ឯកឧត្តម ជា វ៉ាន់ដេត បានដឹកនាំមន្ត្រី និងអ្នកជំនាញបច្ចេកទេសក្រសួង
                                         ទៅទស្សនកិច្ចនៅការដ្ឋានសាងសង់ ពហុកីឡដ្ឋានជាតិមរតកតេជោ
                                         ដើម្បីសិក្សារៀបចំតភ្ជាប់បណ្តាញទូរគមនាគមន៍
@@ -323,8 +428,8 @@
                         </article>
 
                     </div>
-                    <div class="col-12" style="height: 15px;"></div>
-                    <div class="col-lg-4 card-center">
+                    <div class="col-12 d-none d-md-block" style="height: 15px;"></div>
+                    <div class="col-lg-4">
 
                         <article class="card style-2">
                             <div class="aspect16-9">
@@ -332,7 +437,7 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <a href="">
+                                    <a href="./detail.html">
                                         ឯកឧត្តមរដ្ឋមន្រ្តី ជា វ៉ាន់ដេត
                                         អញ្ជើញជាអធិបតីភាពក្នុងពិធីផ្ទេរតំណែងប្រធាននិយ័តករទូរគមនាគមន៍កម្ពុជា
                                     </a>
@@ -341,7 +446,7 @@
                         </article>
                     </div>
 
-                    <div class="col-lg-4 card-center">
+                    <div class="col-lg-4">
 
                         <article class="card style-2">
                             <div class="aspect16-9">
@@ -349,7 +454,7 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <a href="">
+                                    <a href="./detail.html">
                                         ឯកឧត្តមរដ្ឋមន្ត្រី ជា វ៉ាន់ដេត
                                         អញ្ជើញដឹកនាំកិច្ចប្រជុំពិភាក្សាពីវឌ្ឍនភាពនៃការធ្វើអធិការកិច្ចបច្ចេកទេស
                                         និងហិរញ្ញវត្ថុ ជាមួយប្រតិបត្តិករផ្តល់សេវាអុីនធឺណិត (ISP)
@@ -359,7 +464,7 @@
                         </article>
                     </div>
 
-                    <div class="col-lg-4 card-center">
+                    <div class="col-lg-4">
 
                         <article class="card style-2">
                             <div class="aspect16-9">
@@ -367,7 +472,7 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <a href="">
+                                    <a href="./detail.html">
                                         ឯកឧត្ដមរដ្ឋមន្ត្រី ជា វ៉ាន់ដេត បានអញ្ជើញដាក់កម្រងផ្កា គោរពវិញ្ញាក្ខន្ធ
                                         នៅវិមានឯករាជ្យ និងថ្វាយកម្រងផ្កាគោរពព្រះវិញ្ញាណក្ខន្ធ នៅមណ្ឌបព្រះករុណា ព្រះបាទ
                                         សម្តេចព្រះនរោត្តម សីហនុ “ព្រះបរមរតនកោដ្ឋ”
@@ -379,7 +484,8 @@
 
                 </div>
                 <div class="readmore">
-                    <a href="">អានព័ត៌មានបន្ថែម <svg xmlns="http://www.w3.org/2000/svg" width="5.789" height="11.122">
+                    <a href="./news.html">អានព័ត៌មានបន្ថែម <svg xmlns="http://www.w3.org/2000/svg" width="5.789"
+                            height="11.122">
                             <path data-name="Path 5476"
                                 d="M.783 0L0 .685l4.387 4.871L0 10.436l.783.685 4.7-5.218.31-.342-.31-.342z"
                                 fill="#003a8a" />
@@ -393,7 +499,7 @@
             <div class="container">
                 <header class="block-heading">
                     <h1>
-                        <a class="text-primary" href="">
+                        <a class="text-primary" href="./video.html">
                             វីដេអូអប់រំ
                         </a>
                     </h1>
@@ -401,7 +507,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card style-2">
-                            <img src="./assets/images/photo_2020-11-25 16.10.01.png" alt="">
+                            <div class="aspect16-9">
+                                <img src="./assets/images/photo_2020-11-25 16.10.01.png" alt="">
+                            </div>
                             <div class="card-body">
                                 <div class="card-title">
                                     <button class="btn popup-video" data-video-id="GFixS3Qy_mI">
@@ -419,7 +527,9 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card style-2">
-                            <img src="./assets/images/photo_2020-11-25 16.10.01.png" alt="">
+                            <div class="aspect16-9">
+                                <img src="./assets/images/photo_2020-11-25 16.10.01.png" alt="">
+                            </div>
                             <div class="card-body">
                                 <div class="card-title">
 
@@ -439,7 +549,9 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card style-2">
-                            <img src="./assets/images/photo_2020-11-25 16.10.01.png" alt="">
+                            <div class="aspect16-9">
+                                <img src="./assets/images/photo_2020-11-25 16.10.01.png" alt="">
+                            </div>
                             <div class="card-body">
                                 <div class="card-title">
                                     <button class="btn popup-video" data-video-id="GFixS3Qy_mI">
@@ -457,7 +569,8 @@
                     </div>
                 </div>
                 <div class="readmore">
-                    <a href="">អានព័ត៌មានបន្ថែម <svg xmlns="http://www.w3.org/2000/svg" width="5.789" height="11.122">
+                    <a href="./video.html">អានព័ត៌មានបន្ថែម <svg xmlns="http://www.w3.org/2000/svg" width="5.789"
+                            height="11.122">
                             <path data-name="Path 5476"
                                 d="M.783 0L0 .685l4.387 4.871L0 10.436l.783.685 4.7-5.218.31-.342-.31-.342z"
                                 fill="#003a8a" />

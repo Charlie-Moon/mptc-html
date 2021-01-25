@@ -2,5 +2,8 @@
 .section-space {
     padding-top: $space-section-t;
     padding-bottom: $space-section-b;
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 0;
+    }
 }
 

@@ -4,8 +4,9 @@ html, body {
 .nav-open, .search-open {
     overflow:  hidden;
 }
-.nav-open .mobile-nav {
+.nav-open .mobile-header .mobile-nav {
     z-index: 2;
     display: block;
-    transition: 300ms ease;
+    transition:all 0.3s ease-in-out;
+    transform: none;
 }

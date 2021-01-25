@@ -1,0 +1,14 @@
+.block-vision-leaders {
+    .vision {
+        .vision-title {
+            margin-bottom: 30px;
+            img {
+                @extend .mr-2;
+            }
+            .sub-title {
+                font-size: 18px;
+                @extend .text-primary;
+            }
+        }
+    }   
+}

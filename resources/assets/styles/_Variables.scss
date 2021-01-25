@@ -7,10 +7,25 @@ $breadcrumb-divider: quote(">");
 
 $enable-responsive-font-sizes: false;
 $grid-gutter-width: 20px;
+
+// Container
+$grid-breakpoints: (
+    // Extra small screen / phone
+    xs: 0,
+    // Small screen / phone
+    sm: 576px,
+    // Medium screen / tablet
+    md: 960px,
+    // Large screen / desktop
+    lg: 992px,
+    // Extra large screen / wide desktop
+    xl: 1600px,
+);
+
 $container-max-widths: (
     sm: 540px,
     md: 720px,
-    lg: 960px,
+    lg: 1180px,
     xl: 1280px
 ) !default;
 
